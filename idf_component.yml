@@ -1,23 +1,24 @@
+version: "1.0.0"
+description: "A template component for ESP-IDF"
+license: "GPL-3.0-or-later"
+url: "https://github.com/nczy520/esp_idf_logs_spiffs"
+repository: "https://github.com/nczy520/esp_idf_logs_spiffs.git"
+tags:
+  - wifi
+  - provisioning
+  - captive-portal
+  - wifimanager
+  - nvs
+  - softap
+targets:
+  - esp32
+  - esp32s2
+  - esp32s3
+  - esp32c3
+  - esp32c6
 dependencies:
   idf:
-    version: '>=5.0.0'
-description: "A template component for ESP-IDF"
-license: GPL-3.0-or-later
-repository: https://github.com/nczy520/esp_idf_logs_spiffs.git
-repository_info:
-  path: .
-tags:
-- wifi
-- provisioning
-- captive-portal
-- wifimanager
-- nvs
-- softap
-targets:
-- esp32
-- esp32s2
-- esp32s3
-- esp32c3
-- esp32c6
-url: https://github.com/nczy520/esp_idf_logs_spiffs
-version: 1.0.0
+    version: ">=5.0.0"
+files:
+  exclude:
+    - ".github/**/*"
